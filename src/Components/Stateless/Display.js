@@ -12,20 +12,20 @@ const Display = (props) => {
                 <div></div>
                 <div className={`${props.activeItem==='Music'? 'bg-blue-500 ':'' }flex justify-between p-1 items-center w-full`} >
                     <p>Music</p>
-                    <img src={arrow} className='h-3'/>
+                    {props.activeItem==='Music'? <img src={arrow} className='h-3'/>:'' }
 
                 </div>
                 <div className={`${props.activeItem==='Games'? 'bg-blue-500 ':'' }flex justify-between p-1 items-center w-full`}>
                     <p>Games</p>
-                    <img src={arrow} className='h-3'/>
+                    {props.activeItem==='Games'? <img src={arrow} className='h-3'/>:'' }
                 </div>
                 <div className={`${props.activeItem==='Playlist'? 'bg-blue-500 ':'' }flex justify-between p-1 items-center w-full`}>
                     <p>Playlist</p>
-                    <img src={arrow} className='h-3'/>
+                    {props.activeItem==='Playlist'? <img src={arrow} className='h-3'/>:'' }
                 </div>
                 <div className={`${props.activeItem==='Settings'? 'bg-blue-500 ':'' }flex justify-between p-1 items-center w-full`}>
                     <p>Settings</p>
-                    <img src={arrow} className='h-3'/>
+                    {props.activeItem==='Settings'? <img src={arrow} className='h-3'/>:'' }
                 </div>
             </div>
         </div>
